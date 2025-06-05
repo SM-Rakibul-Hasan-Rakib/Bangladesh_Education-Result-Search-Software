@@ -12,9 +12,22 @@ li {
   justify-content: center;
 }
 .edu-container {
+  background-color: #fff;
   height: 545px;
   width: 640px;
   border-radius: 10px;
   margin-top: 50px;
   padding: 10px;
+}
+.edu-header {
+  display: flex;
+}
+.edu-header .header-logo {
+  background-color: #eee;
+  width: 145px;
+  padding: 20px;
+  border-radius: 10px 0px 0px 10px;
+}
+.edu-header .header-info {
+  background-color: #137814;
 }
