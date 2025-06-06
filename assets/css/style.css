@@ -119,5 +119,22 @@ li {
 .btns {
   display: flex;
   justify-content: flex-end;
-  gap: 10px;
+  gap: 5px;
+}
+.btns button {
+  appearance: auto;
+  user-select: none;
+  align-items: flex-start;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: buttonface;
+  color: buttontext;
+  white-space: pre;
+  padding-block: 1px;
+  padding-inline: 6px;
+  border-width: 1px;
+  border-style: outset;
+  border-color: buttonborder;
+  border-image: initial;
+  border-radius: 3px;
 }
