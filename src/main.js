@@ -1,5 +1,6 @@
 const studentCreateForm = document.getElementById("student-create-form");
 const msg = document.querySelector(".msg");
+const btnClose = document.querySelector(".btn-close");
 
 // Define the alert function
 function createAlert(message, type = "danger") {
@@ -27,11 +28,13 @@ studentCreateForm.onsubmit = (e) => {
       // push new Data
       ...data,
       id: createID(),
-      createAt: Data.now(),
+      createAt: Date.now(),
       updateAt: null,
     });
 
     // send data to ls
     localStorage.setItem("students", JSON.stringify(oldData));
+    e.target.reset(); // reset form
+    btnClose.click(); // close modal
   }
 };
